@@ -1,5 +1,8 @@
 """
 This script will take a pretrained model and show it playing snake
+
+NOTE: This won't run on mac because of how view thread perms work
+on mac
 """
 
 import gymnasium
@@ -8,7 +11,7 @@ import pygame
 import torch
 import torch.nn as nn
 import numpy as np
-from main import DQN, preprocess
+from train import DQN, preprocess
 
 model_path = "./models/snake_dqn.pth"
 episodes = 5

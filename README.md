@@ -7,30 +7,30 @@ Machine Learning final project - reinforcement learning for the Snake game.
 ## Setup
 
 1. Clone the github repository
-2. Install pip requirements with `pip install -r requirements.txt`
+2. Install requirements by running `pip install -r requirements.txt` in project
 
-### Create a venv
+I'd recommend creating a python venv at this point for all the packages being created
 
-TODO
+## Running
 
-### Install requirements
-
-The final setup step is installing the requirements. Make sure you are in the root folder of the repository before running the following command.
-
-```
-pip install -r requirements.txt
-```
-
-## Playing the game
-
-### Running
+There are a two entrypoints into the program. You can either run train.py which
+will begin training a new model immediately. Alternatively, you can run
+model_play.py which will load the current model and see it play snake.
 
 1. Navigate to the repository root folder.
-2. Make sure all setup instructions are followed and the conda env is activated.
-3. Run the following command
+2. Make sure all setup instructions are followed and env is activate (if you made one).
+3. Follow Training The Model or Running The Model command
 
-```
+### Training The Model
+
+```bash
 python3 main.py
+```
+
+### Running The Model
+
+```bash
+python3 model_play.py
 ```
 
 ## Acknowledgements
